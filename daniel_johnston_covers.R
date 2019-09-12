@@ -2,8 +2,6 @@ library(rvest)
 library(tidyverse)
 library(glue)
 library(extrafont)
-library(cowplot)
-library(png)
 library(ggtext)
 
 covers_page <- read_html("http://www.rejectedunknown.com/covers/")
