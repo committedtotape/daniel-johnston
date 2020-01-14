@@ -50,7 +50,7 @@ ggplot(most_covered, aes(x = position, y = n)) +
             aes(x = position, label = artists, y = n - 2), hjust = 1, nudge_x = -0.3,
             size = 3.5, family = "Gaegu") +
   geom_line(aes(y=-0.5), position = position_jitter(h = 0.1), colour="black", size = 2) +
-  geom_rich_text(aes(label = "<img src='hi-how-are-you.png'
+  geom_richtext(aes(label = "<img src='hi-how-are-you.png'
     width='300'  />", x = 8.5, y = 60), colour = NA) +
   annotate("text", label = glue("{overall$songs} songs covered"), 
            x = 5, y = 52, fontface = "bold", size = 5, family = "Gaegu") +
